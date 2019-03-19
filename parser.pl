@@ -138,16 +138,46 @@ adjective(adj(white)) --> [white].
 adjective(adj(poor)) --> [poor].
 adjective(adj(talented)) --> [talented].
 adjective(adj(bright)) --> [bright].
+adjective(adj(positive)) --> [positive].
+adjective(adj(awful)) --> [awful].
+adjective(adj(brave)) --> [brave].
+adjective(adj(clever)) --> [clever].
+adjective(adj(adorable)) --> [adorable].
+adjective(adj(small)) --> [small].
+adjective(adj(rich)) --> [rich].
 
 adverb(adv(quickly)) --> [quickly].
 adverb(adv(secretly)) --> [secretly].
+adverb(adv(carefully)) --> [carefully].
+adverb(adv(slowly)) --> [slowly].
+adverb(adv(badly)) --> [badly].
+adverb(adv(closely)) --> [closely].
+adverb(adv(easily)) --> [easily].
+adverb(adv(cheerfully)) --> [cheerfully].
+adverb(adv(painfully)) --> [painfully].
+adverb(adv(happily)) --> [happily].
+adverb(adv(bravely)) --> [bravely].
+adverb(adv(finally)) --> [finally].
+adverb(adv(angirly)) --> [angirly].
+adverb(adv(suddenly)) --> [suddenly].
+adverb(adv(kindly)) --> [kindly].
+adverb(adv(theoretically)) --> [theoretically].
+adverb(adv(sadly)) --> [sadly].
+adverb(adv(instantly)) --> [instantly].
+adverb(adv(lovingly)) --> [lovingly].
+adverb(adv(calmly)) --> [calmly].
 
 preposition(prep(in)) --> [in].
+preposition(prep(on)) --> [on].
+preposition(prep(at)) --> [at].
 preposition(prep(for)) --> [for].
+preposition(prep(from)) --> [from].
 preposition(prep(after)) --> [after].
+preposition(prep(before)) --> [before].
 preposition(prep(of)) --> [of].
 preposition(prep(with)) --> [with].
 preposition(prep(behind)) --> [behind].
+preposition(prep(below)) --> [below].
 
 verb(v(eats)) --> [eats].
 verb(v(played)) --> [played].
@@ -159,6 +189,16 @@ verb(v(climbed)) --> [climbed].
 verb(v(watched)) --> [watched].
 verb(v(admired)) --> [admired].
 verb(v(appreciated)) --> [appreciated].
+verb(v(added)) --> [added].
+verb(v(allowed)) --> [allowed].
+verb(v(finished)) --> [finished].
+verb(v(entered)) --> [entered].
+verb(v(introduced)) --> [introduced].
+verb(v(listened)) --> [listened].
+verb(v(liked)) --> [liked].
+verb(v(chose)) --> [chose].
+verb(v(carried)) --> [carried].
+verb(v(borrowed)) --> [borrowed].
 
 
 % ?- sentence(Parse_tree, [the,old,man,and,the,old,woman,gave,the,poor,young,man,a,white,envelope,in,the,shed,behind,the,building], []).
@@ -166,25 +206,10 @@ verb(v(appreciated)) --> [appreciated].
 % ?- sentence(Parse_tree, [every,boy,quickly,climbed,some,big,tree,while,every,girl,secretly,watched,some,boy], []).
 % ?- sentence(Parse_tree, [some,brilliant,students,and,many,professors,watched,and,admired,talented,lecturers,and,appreciated,bright,scientists,and,researchers], []).
 
-% % sentence(X, []).
-%
-% sentence(A,Z) :- noun_phrase(A,B), verb_phrase(B,Z).
-% noun_phrase(A,Z) :- det(A,B), noun(B,Z).
-% verb_phrase(A,Z) :- verb(A,B), noun_phrase(B,Z).
-%
-%
-%
-%
-%
-% % at least twenty nouns
-% noun([cat|X], X).
-% noun([bat|X], X).
-% % at least twenty verbs (with the past tense in ection)
-% verb([eats|X], X).
-% % at least twenty adjectives
-% % at least ten adverbs
-% % at least ten prepositions
-% % at least ten determiners.
-%
-% det([the|X], X).
-% det([a|X], X).
+
+% % at least twenty nouns done
+% % at least twenty verbs (with the past tense in action) done
+% % at least twenty adjectives done
+% % at least ten adverbs done
+% % at least ten prepositions done
+% % at least ten determiners done
